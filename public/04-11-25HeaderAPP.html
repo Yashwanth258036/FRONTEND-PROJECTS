@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecart</title>
+    <title>Shopper</title>
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
     <style>
         .brand-tittle {
             font-size: 25px;
@@ -39,43 +40,137 @@
         .bi-lightning-fill {
             color: goldenrod;
         }
-    section{
-        height: 400px;
-    }
-    footer{
-        background-color: burlywood;
-        color: black;
-        display: grid;
-        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
-        padding: 10px;
-        margin-right: 10px;
-    }
-    .footer-title
-    {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    .footer-brand-title
-    {
-        font-weight: bold;
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    .footer-title~span{
-        display: block;
-        margin-bottom: 15px;
-        font-family: arial;
-    }
-    address span{
-        display: block;
-        margin: 15px;
-    }
-    .footer-brand-title~div span{
-        margin-right: 10px;
-        font-size: 20px;
-    }
-    
+
+        /* FIXED: removed height so no overlap */
+        section {
+            padding: 15px;
+        }
+
+        footer {
+            background-color: burlywood;
+            color: black;
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .footer-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer-brand-title {
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .footer-title~span {
+            display: block;
+            margin-bottom: 15px;
+            font-family: arial;
+        }
+
+        address span {
+            display: block;
+            margin: 15px;
+        }
+
+        .footer-brand-title~div span {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-gap: 5px;
+            margin-top: 10px;
+        }
+
+        .women {
+            background-image: url("images/women.jpg");
+        }
+
+        .men {
+            background-image: url("images/men.jpg");
+        }
+
+        .kids {
+            background-image: url("images/kids.jpg");
+        }
+
+        .women,
+        .men,
+        .kids {
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        button {
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .features {
+            margin-top: 20px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            font-family: Arial;
+        }
+
+        .features .bi {
+            color: red;
+        }
+
+        .features div {
+            margin-bottom: 10px;
+        }
+
+        .feature-text {
+            color: gray;
+        }
+
+        .site-main {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .site-main-title {
+            font-size: 40px;
+            font-family: Arial;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .site-main-subtitle {
+            color: gray;
+        }
+
+        .site-main-text {
+            font-family: Arial;
+            width: 500px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -84,6 +179,7 @@
         <div class="brand-tittle">
             <span>SHOPPER.</span>
         </div>
+
         <nav class="navigation">
             <span>Home</span>
             <span>Catalog</span>
@@ -92,6 +188,7 @@
             <span>Blog</span>
             <span>Docs</span>
         </nav>
+
         <div class="shortcut-buttons">
             <span class="bi bi-search"></span>
             <span class="bi bi-person"></span>
@@ -99,12 +196,83 @@
             <span class="bi bi-cart4"></span>
         </div>
     </header>
+
     <article>
         <span class="bi bi-lightning-fill"></span>
         <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
         <span class="bi bi-lightning-fill"></span>
     </article>
-    <section></section>
+
+    <section>
+        <main>
+            <div class="women">
+                <div class="title">
+                    <h1>WOMEN</h1>
+                    <button>Shop Women <span class="bi bi-arrow-right"></span> </button>
+                </div>
+            </div>
+
+            <div class="men">
+                <div class="title">
+                    <h1>MEN</h1>
+                    <button>Shop Men <span class="bi bi-arrow-right"></span> </button>
+                </div>
+            </div>
+
+            <div class="kids">
+                <div class="title">
+                    <h1>KIDS</h1>
+                    <button>Shop Kids <span class="bi bi-arrow-right"></span> </button>
+                </div>
+            </div>
+        </main>
+        <div class="features">
+            <div>
+                <div>
+                    <span class="bi bi-truck"></span> FREE SHIPPING
+                </div>
+                <div class="feature-text">
+                    From all orders over $100
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="bi bi-arrow-repeat"></span> FREE RETURNS
+                </div>
+                <div class="feature-text">
+                    Return money within 30 days
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="bi bi-lock"></span> SECURE SHOPPING
+                </div>
+                <div class="feature-text">
+                    You're in safe hands
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="bi bi-tag"></span> OVER 10,000 STYLES
+                </div>
+                <div class="feature-text">
+                    We have everything you need
+                </div>
+            </div>
+        </div>
+        <div class="site-main">
+            <div>
+                <div class="site-main-subtitle">NEW COLLECTION</div>
+                <div class="site-main-title">Best Picks 2025</div>
+                <div class="site-main-text">
+                    Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, above fly brought Very
+                    green.
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <footer>
         <div>
             <div class="footer-brand-title">SHOPPER.</div>
@@ -115,13 +283,15 @@
                 <span class="bi bi-instagram"></span>
             </div>
         </div>
+
         <div>
             <div class="footer-title">Support</div>
             <span>Contact Us</span>
             <span>FAQS</span>
             <span>Size Guide</span>
-            <span>Shipping & Returns </span>
+            <span>Shipping & Returns</span>
         </div>
+
         <div>
             <div class="footer-title">Shop</div>
             <span>Men's Shopping</span>
@@ -129,23 +299,21 @@
             <span>Kids Shopping</span>
             <span>Discounts</span>
         </div>
+
         <div>
             <div class="footer-title">Company</div>
             <span>Our Story</span>
             <span>Careers</span>
-            <span>Teams & Conditions</span>
-            <span>Privacy & Cookie policy</span>
+            <span>Terms & Conditions</span>
+            <span>Privacy & Cookie Policy</span>
         </div>
+
         <div>
             <div class="footer-title">Contact</div>
             <address>
-            <span>
-                +91 10000020
-            </span>
-            <span>
-                +91 10000040
-            </span>
-            <span>help@support.com</span>
+                <span>+91 10000020</span>
+                <span>+91 10000040</span>
+                <span>help@support.com</span>
             </address>
         </div>
     </footer>
