@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Index — Product Categories</title>
+  <style>
+    :root{font-family: Arial, sans-serif;}
+    body{margin:0;padding:20px;background:#f3f4f6;color:#111}
+    header{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+    h1{font-size:18px;margin:0}
+    .links{margin-left:auto;display:flex;gap:8px}
+    .links a{background:#1f2937;color:#fff;padding:8px 12px;text-decoration:none;border-radius:4px;font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:8px;display:flex;flex-direction:column;height:560px}
+    .card h2{font-size:15px;margin:6px 8px}
+    iframe{flex:1;border:0;border-radius:4px;background:#fff;width:100%}
+    .small-note{font-size:13px;color:#6b7280;margin-top:8px}
+    @media (max-width:480px){.card{height:420px}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Site Index — Open product pages</h1>
+    <div class="links">
+      <a href="public/mens.html" target="_blank" rel="noopener">Open Mens (new tab)</a>
+      <a href="public/women.html" target="_blank" rel="noopener">Open Women (new tab)</a>
+      <a href="public/kids.html" target="_blank" rel="noopener">Open Kids (new tab)</a>
+    </div>
+  </header>
+
+  <div class="grid">
+    <section class="card" aria-labelledby="mens-title">
+      <h2 id="mens-title">Mens</h2>
+      <iframe src="public/mens.html" title="Mens products" loading="lazy"></iframe>
+      <div class="small-note">If the iframe is empty, open the page in a new tab above.</div>
+    </section>
+
+    <section class="card" aria-labelledby="women-title">
+      <h2 id="women-title">Women</h2>
+      <iframe src="public/women.html" title="Women products" loading="lazy"></iframe>
+      <div class="small-note">If the iframe is empty, open the page in a new tab above.</div>
+    </section>
+
+    <section class="card" aria-labelledby="kids-title">
+      <h2 id="kids-title">Kids</h2>
+      <iframe src="public/kids.html" title="Kids products" loading="lazy"></iframe>
+      <div class="small-note">If the iframe is empty, open the page in a new tab above.</div>
+    </section>
+  </div>
+
+</body>
+</html>

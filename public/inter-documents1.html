@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        iframe {
+            border:none;
+        }
+    </style>
+
+</head>
+<body>
+   <section>
+     <nav>
+        <h2>Inter Document Links</h2>
+        <ol>
+            <li><a href="04-11-25HeaderAPP.html" target="frameBody">Shopper Template</a></li>
+            <li><a href="javascript:window.open('images\amazonbackground.jpg','Fashion','width=300 height=400')">Women's Fashion</a></li>
+            <li><a href="images/fashion3.png" target="frameBody">Kid's Fashion</a></li>
+            <li><a href="docs/">Array's PDF</a></li>
+            <li><a href="docs/C.docx"> C# MCQ Word Document </a></li>
+            <li><a href="http://www.amazon.in">Amazon Shopping</a></li>
+            <li>For more details contact <a href="mailto:hr@nareshit.in">hr@nareshit.in</a> </li>
+            <li>You can <a href="skype:nareshit@outlook.com">Skype</a> Us.</li>
+            <li>Call <a href="tel:+919876543210">+919876543210</a> </li>
+            <li><a href="https://www.youtube.com/embed/k7zQspUUJeI" target="frameBody">New Batch</a></li>
+            <li><a href="https://www.youtube.com/embed/oCvxyT7YA4E" target="frameBody">Core Java</a></li>
+        </ol>
+     </nav>
+     <main>
+        <iframe width="100%" name="frameBody" height="500"></iframe>
+     </main>
+   </section>
+</body>
+
+</html>
