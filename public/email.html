@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        dl {
+            display: flex;
+            flex-direction: column;
+        }
+
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <dl>
+            <dt>Email:</dt>
+            <dd><input type="email"></dd>
+        </dl>
+        <button>register</button>
+
+    </form>
+    <form>
+        <dl>
+            <dt>URL</dt>
+            <dd> <input type="url" name="url"></dd>
+        </dl>
+        <button>submit</button>
+    </form>
+    <form>
+        <dl>
+            <dt>Deapature:</dt>
+            <dd> <input type="date" min="2026-01-07" max="2026-02-15"></dd>
+        </dl>
+        <button>submit</button>
+    </form>
+    <form>
+        <dl>
+            <dt>Your Resume:</dt>
+            <dd> <input type="file" name="files" accept=".gif,.pdf" multiple></dd>
+        </dl>
+        <button>submit</button>
+    </form>
+    <form>
+        <dl>
+            <dt>Select Gender:</dt>
+            <dd>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female" checked> Female
+            </dd>
+            <button>submit</button>
+        </dl>
+    </form>
+    <form>
+        <dl>
+            <dt>Select your skills:</dt>
+            <dd>
+                <input type="checkbox" name="skills" value="HTML" > HTML
+                <input type="checkbox" name="skills" value="CSS"> CSS
+                <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+            </dd>
+            <button>submit</button>
+        </dl>
+    </form>
+</body>
+
+</html>
