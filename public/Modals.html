@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="container-fluid">
+    <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+    <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#productDetails">Product Details</button>
+   
+        <div class="modal" id="productDetails">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h2><span class="bi bi-phone-fill"></span> Samsung Galaxy S21</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="../public/images/Samsung.JPG" alt="Samsung Galaxy S21" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Specifications:</h3>
+                            <ul>
+                                <li>Display: 6.2-inch Dynamic AMOLED 2X</li>
+                                <li>Processor: Exynos 2100 / Snapdragon 888</li>
+                                <li>RAM: 8GB</li>
+                                <li>Storage: 128GB / 256GB</li>
+                                <li>Camera: Triple Rear Camera (12MP + 64MP + 12MP), 10MP Front Camera</li>
+                                <li>Battery: 4000mAh with Fast Charging</li>
+                                <li>Operating System: Android 11, upgradable to Android 12</li>
+                            </ul>
+                        </div>
+                    </div>
+
+    </div>
+    <div class="modal" id="login">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2><span class="bi bi-person-fill"></span>User login</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+
+
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <dl>
+                            <dt><label for="username">Username:</label></dt>
+                            <dd><input type="text" id="username" name="username" class="form-control"></dd>
+                            <dt><label for="password">Password:</label></dt>
+                            <dd><input type="password" id="password" name="password" class="form-control"></dd>
+                        </dl>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success">Login</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+
+
+        
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
