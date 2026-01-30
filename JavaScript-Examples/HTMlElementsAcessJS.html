@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function LoadImage()
+        {
+            window.document.images[0].src="../public/images/A!.jpg";
+            window.document.forms[0].elements[1].value="Register Now";
+            window.document.forms[1].elements[1].value="Login Now";
+        }
+    </script>
+</head>
+<body onload="LoadImage()">
+    <div>
+        <img border="1" width="100" height="100">
+    </div>
+    <div>
+        <h1>Register</h1>
+        User Name:<input type="mail"><button></button>
+    </div>
+    <div>
+        <h1>Login</h1>
+        Mobile:<input type="mail"><button></button>
+    </div>
+</body>
+</html>
