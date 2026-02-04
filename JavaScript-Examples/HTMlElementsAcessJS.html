@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        function LoadImage()
-        {
-            window.document.images[0].src="../public/images/A!.jpg";
-            window.document.forms[0].elements[1].value="Register Now";
-            window.document.forms[1].elements[1].value="Login Now";
-        }
-    </script>
-</head>
-<body onload="LoadImage()">
-    <div>
-        <img border="1" width="100" height="100">
-    </div>
-    <div>
+    <script type="text/javascript">
+    function LoadImage() {
+        document.images[0].src = "../public/images/A!.jpg";
+        // Use innerText for buttons and select by ID for reliability
+       // document.getElementById("regBtn").innerText = "Register Now";
+       // document.getElementById("loginBtn").innerText = "Login Now";
+       window.document.forms[0].elements[1].innerText = "Register Now";
+       window.document.forms[1].elements[1].innerText = "Login Now";
+    }
+    function ChangeImage() {
+        document.querySelector("img").src = "../public/images/b1.jpg";
+        document.querySelector(".btn-Register").innerText = "Register Now";
+        document.querySelector(".btn-login").innerText = "Login Now";
+    }
+    
+   
+
+</script>
+<style>
+    .btn-Register {
+        background-color: yellow;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .btn-login {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+<body onload="ChangeImage()">
+    <img border="1" width="100" height="100">
+    <form>
         <h1>Register</h1>
-        User Name:<input type="mail"><button></button>
-    </div>
-    <div>
+        User Name: <input type="email"> <button class="btn-Register"></button>
+    </form>
+    <form>
         <h1>Login</h1>
-        Mobile:<input type="mail"><button></button>
-    </div>
+        Mobile: <input type="tel"> <button class="btn-login"></button>
+    </form>
+</body>
 </body>
 </html>

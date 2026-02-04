@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function DeleteClick() {
+            flag=confirm("Record is Deleted Successfully!");
+            if(flag==true){
+                document.querySelector("body").innerHTML = "<b style='color:red;'>Record Deleted</b><br><a href='Alerts.html'>Go Back</a>";
+               // document.write("<b style='color:red;'>Record Deleted</b><br><a href='Alerts.html'>Go Back</a>");
+            } else {
+                document.write("<b style='color:green;'>Record Not Deleted</b><br><a href='Alerts.html'>Go Back</a>");
+
+            }
+        }
+        
+    </script>
+
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    
+</body>
+</html>

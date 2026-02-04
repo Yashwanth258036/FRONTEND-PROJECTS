@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyLoad() {
+
+            str = prompt("Enter your name:");
+            document.getElementById("msg").innerHTML = str;
+
+        }
+
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <h2>Input Demo:</h2>
+    <p>Hello:<span id="msg"></span></p>
+</body>
+
+</html>
