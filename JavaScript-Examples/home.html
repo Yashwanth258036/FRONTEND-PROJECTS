@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function checkin(){
+            var path="D:\\Java Full Stack\\FRONTEND-PROJECTS\\FRONTEND-PROJECTS\\public\\images\\A!.jpg";
+
+            var name=prompt("Enter your name: ");
+           var age=prompt("Enter your age: ");
+           var msg=`Your name is ${name} and your age is ${age} `;
+           document.writeln(msg);
+           document.write(path);
+           
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Welcome to My Home Page</h1>
+    <p>This is a simple home page created using HTML and JavaScript.</p>
+    <button onclick="checkin()">About You</button>
+</body>
+</html>

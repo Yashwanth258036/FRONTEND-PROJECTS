@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    "use strict";
+   
+   function validateAge(){
+    var age = document.getElementById("age").value;
+   var error=document.getElementById("message");
+       if(isNaN(age)){
+           error.innerHTML="Please enter a valid number";
+           error.style.color="red";
+       }
+       else if(age<18){
+           error.innerHTML="You are not eligible to vote";
+           error.style.color="red";
+       }    
+
+       else{
+           error.innerHTML="You are eligible to vote";
+           error.style.color="green";
+       }   } 
+
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Enter your Age:</dt>
+       <dd><input type="text" id="age"></dd> 
+       <dd id="message"></dd>
+        
+    </dl>
+    <button onclick="validateAge()">Submit</button>
+</body>
+</html>
